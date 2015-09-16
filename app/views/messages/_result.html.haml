@@ -1,0 +1,11 @@
+- if @notice
+  .notice
+    = @notice
+- if @message.errors.any?
+  %h2
+    = pluralize(@message.errors.count, "error")
+  prohibited this message from being saved:
+  %ul
+    - @message.errors.full_messages.each do |message|
+      %li= message
+= button_to t('.return'), messages_send_path, format: :js, remote: true, method: :get 

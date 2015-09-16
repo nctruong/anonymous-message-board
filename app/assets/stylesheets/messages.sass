@@ -1,0 +1,45 @@
+// Place all the styles related to the messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+=center
+    margin-left: auto
+    margin-right: auto
+    width: 90%    
+
+*
+    text-align: center
+.translation_missing
+    color: red
+h1.title
+    +center
+    border-bottom: solid 3px #99f
+    padding: 10px
+.form_view
+    #error_explanation
+        +center
+    text-align: inherit
+    +center
+    form
+        width: 100%
+        input
+            padding: 0px
+            height: 50px
+            border: none 
+            +center
+        input[type=submit]
+            background-color: #99f
+        input[type=submit]:hover
+            background-color: #f99    
+            cursor: pointer
+        input[type=text]
+            border: 1px solid #99f
+        .field_with_errors
+            +center
+.list_view
+    .datetime
+        +center
+        border-bottom: 1px solid black
+    .message
+        padding-bottom: 20px
+.form_place_holder
+    height: 200px

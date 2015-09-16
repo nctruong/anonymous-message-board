@@ -1,0 +1,5 @@
+$('.form_view').html("<%= escape_javascript(render('result')); %>");
+$('.list_view').html("<%= escape_javascript(render('list')); %>");
+$('.form_view').show();
+$('.ajax_message').html('');
+document.set_calbacks();
