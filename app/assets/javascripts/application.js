@@ -13,4 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require socket.io
 //= require_tree .
+
+$(document).ready( function(){
+	window.socket_io.connect();	
+});

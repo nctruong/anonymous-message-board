@@ -1,0 +1,9 @@
+{
+  "name": "rails-socket",
+  "description": "change callback",
+  "version": "0.0.1",
+  "dependencies": {
+    "redis": "^1.0.0",
+    "socket.io": "^1.3.6"
+  }
+}

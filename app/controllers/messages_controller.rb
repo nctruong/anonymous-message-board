@@ -5,10 +5,6 @@ class MessagesController < ApplicationController
     end
     def new
         @message = Message.new
-        respond_to do |format|
-            format.html
-            format.js
-        end           
     end
     def list
     end    

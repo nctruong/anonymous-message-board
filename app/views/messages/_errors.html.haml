@@ -1,0 +1,7 @@
+- if msg.errors.any?
+  %h2
+    = pluralize(msg.errors.count, "error")
+    prohibited this msg from being saved:
+  %ul
+    - msg.errors.full_messages.each do |message|
+      %li= message

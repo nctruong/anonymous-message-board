@@ -1,5 +1,9 @@
-$('.form_view').html("<%= escape_javascript(render('result')); %>");
-$('.list_view').html("<%= escape_javascript(render('list')); %>");
 $('.form_view').show();
-$('.ajax_message').html('');
-document.set_calbacks();
+$('.load_message').hide();
+$('#message_text').val('');
+$('#error_explanation').html("<%= escape_javascript(render('errors',msg:@message)); %>");
+if($('#error_explanation').text() !== ''){
+	$('#error_explanation').show();
+} else {
+	$('#error_explanation').hide();
+}
